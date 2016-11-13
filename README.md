@@ -192,9 +192,9 @@ $ git push origin master
 
 ```
 Rails.application.routes.draw do
-resources :keihis
-resources :kamokus
-root 'keihis#index'
+  resources :keihis
+  resources :kamokus
+  root 'keihis#index'
 ```
 
 - GitHubにPush
