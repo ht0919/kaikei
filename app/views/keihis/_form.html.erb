@@ -16,8 +16,8 @@
     <%= f.date_select :date %>
   </div>
   <div class="field">
-    <%= f.label :kamoku_id_id %><br>
-    <%= f.text_field :kamoku_id_id %>
+   <%= f.label :kamoku_id %>
+   <%= f.collection_select(:kamoku_id, Kamoku.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :tekiyou %><br>
