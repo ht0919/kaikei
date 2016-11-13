@@ -17,7 +17,7 @@
     <% @keihis.each do |keihi| %>
       <tr>
         <td><%= keihi.date %></td>
-        <td><%= keihi.kamoku_id %></td>
+        <td><%= keihi.kamoku.name %></td>
         <td><%= keihi.tekiyou %></td>
         <td><%= keihi.kingaku %></td>
         <td><%= link_to 'Show', keihi %></td>
