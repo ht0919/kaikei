@@ -1,0 +1,2 @@
+module KeihisHelper
+end

@@ -1,0 +1,33 @@
+<%= form_for(@keihi) do |f| %>
+  <% if @keihi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@keihi.errors.count, "error") %> prohibited this keihi from being saved:</h2>
+
+      <ul>
+      <% @keihi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :kamoku_id_id %><br>
+    <%= f.text_field :kamoku_id_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tekiyou %><br>
+    <%= f.text_field :tekiyou %>
+  </div>
+  <div class="field">
+    <%= f.label :kingaku %><br>
+    <%= f.number_field :kingaku %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

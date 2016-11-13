@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @keihi.date %>
+</p>
+
+<p>
+  <strong>Kamoku:</strong>
+  <%= @keihi.kamoku_id %>
+</p>
+
+<p>
+  <strong>Tekiyou:</strong>
+  <%= @keihi.tekiyou %>
+</p>
+
+<p>
+  <strong>Kingaku:</strong>
+  <%= @keihi.kingaku %>
+</p>
+
+<%= link_to 'Edit', edit_keihi_path(@keihi) %> |
+<%= link_to 'Back', keihis_path %>

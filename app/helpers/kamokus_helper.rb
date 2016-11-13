@@ -1,0 +1,2 @@
+module KamokusHelper
+end

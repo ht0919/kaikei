@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-11-13
+  kamoku_id_id: 
+  tekiyou: MyString
+  kingaku: 1
+
+two:
+  date: 2016-11-13
+  kamoku_id_id: 
+  tekiyou: MyString
+  kingaku: 1
