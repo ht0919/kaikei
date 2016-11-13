@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Date:</strong>
+  <strong>日付:</strong>
   <%= @keihi.date %>
 </p>
 
 <p>
-  <strong>Kamoku:</strong>
+  <strong>科目:</strong>
   <%= @keihi.kamoku.name %>
 </p>
 
 <p>
-  <strong>Tekiyou:</strong>
+  <strong>適用:</strong>
   <%= @keihi.tekiyou %>
 </p>
 
 <p>
-  <strong>Kingaku:</strong>
+  <strong>金額:</strong>
   <%= @keihi.kingaku %>
 </p>
 
-<%= link_to 'Edit', edit_keihi_path(@keihi) %> |
-<%= link_to 'Back', keihis_path %>
+<%= link_to '編集', edit_keihi_path(@keihi) %> |
+<%= link_to '戻る', keihis_path %>

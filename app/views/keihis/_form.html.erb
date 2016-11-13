@@ -12,19 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :date %><br>
+    <%= f.label :date, "日付" %><br>
     <%= f.date_select :date %>
   </div>
   <div class="field">
-   <%= f.label :kamoku_id %>
+   <%= f.label :kamoku_id, "科目" %>
    <%= f.collection_select(:kamoku_id, Kamoku.all, :id, :name) %>
   </div>
   <div class="field">
-    <%= f.label :tekiyou %><br>
+    <%= f.label :tekiyou, "適用" %><br>
     <%= f.text_field :tekiyou %>
   </div>
   <div class="field">
-    <%= f.label :kingaku %><br>
+    <%= f.label :kingaku, "金額" %><br>
     <%= f.number_field :kingaku %>
   </div>
   <div class="actions">
